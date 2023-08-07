@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Security Alert</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,500&family=Merriweather:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Karla", sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh; /* This ensures the container takes the full viewport height */
+      }
+      .parent {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .header {
+        text-align: center; /* Center the logo */
+        margin-bottom: 20px; /* Add some space between header and message */
+      }
+      .header img {
+        max-width: 100%;
+        height: auto; /* Maintain aspect ratio */
+      }
+      .message {
+        padding: 20px;
+        background-color: #f7f7f7;
+        border-radius: 5px;
+      }
+      .message p {
+        margin-bottom: 10px;
+      }
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+      .button:hover {
+        background-color: #0056b3;
+      }
+      .footer {
+        background-color: #f2f2f2;
+        padding: 10px;
+        text-align: center;
+        margin-top: 20px;
+      }
+      .dashboard-link {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+      }
+      .stay-safe {
+        text-align: left;
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+      /* Media Query for mobile devices */
+      @media only screen and (max-width: 600px) {
+        .container {
+          padding: 0 10px;
+          width: 100%;
+        }
+        .header {
+          margin-bottom: 10px;
+        }
+        .message {
+          padding: 10px;
+        }
+        .button {
+          width: 100%;
+          text-align: center;
+        }
+      }
+      /* Media Query for Tablets */
+      @media only screen and (min-width: 601px) and (max-width: 768px) {
+        .parent {
+          max-width: 100%;
+        }
+      }
+    </style>
+
+    <!-- Bootstrap CSS (Optional if you need to use Bootstrap CSS features) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MDdVyd8ZZ5jw6G5ezzJVoX0pRwgcJ9tA3w1TGkE&71R"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Container Div -->
+    <div class="container">
+      <!-- Parent Div -->
+      <div class="parent">
+        <!-- Header Section -->
+        <div class="header">
+          <img
+            src="https://nivaaran-bucket.s3.ap-south-1.amazonaws.com/assets/Logo.svg"
+            alt="Company Logo"
+          />
+        </div>
+
+        <!-- Message Section -->
+        <div class="message">
+          <h6>Dear [Organization Name],</h6>
+          <p>
+            We have detected some suspicious activity in the area of [Camera
+            Geolocation] with the following details:
+          </p>
+
+          <p>
+            <b>Title:</b> [Camera Title]<br />
+            <b>Camera Name:</b> [Camera Name]<br />
+            <b>IP Address:</b> [Camera IP Address]
+          </p>
+
+          <p>
+            Our monitoring system has flagged this activity as potentially
+            concerning, and we wanted to bring it to your attention promptly.
+            Please review the footage from the mentioned camera to ensure the
+            safety and security of your premises.
+          </p>
+
+          <p>
+            If you find any unusual or unauthorized behavior, we recommend
+            taking appropriate action as per your security protocols. In case of
+            any security concerns or if you need further assistance, please do
+            not hesitate to reach out to our team at
+            <a href="mailto:help@nivaaran.live">support</a>.
+          </p>
+
+          <p>
+            At Nivaaran, we take security seriously and are committed to
+            ensuring the protection of your property and assets. Rest assured
+            that we are continuously monitoring the situation and working to
+            enhance our security measures.
+          </p>
+
+          <p>
+            Thank you for your attention to this matter. We value your trust in
+            our services and are here to assist you whenever needed.
+          </p>
+
+          <p class="stay-safe">Stay safe!<br /></p>
+          <p>--Team Nivaaran<br /></p>
+
+          <!-- Centered "View on Dashboard" Link -->
+          <div class="dashboard-link">
+            <a class="button" href="https://app.nivaaran.live"
+              >View on Dashboard</a
+            >
+          </div>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="footer">&copy; 2023 objecx.com. All rights reserved.</div>
+      </div>
+    </div>
+  </body>
+  <!-- Bootstrap JS (Optional if you need to use Bootstrap JavaScript features) -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPmU3"
+    crossorigin="anonymous"
+  ></script>
+</html>
